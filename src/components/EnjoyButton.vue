@@ -26,10 +26,13 @@ h1 {
 .enjoy_button {
   font-size: 2rem;
   font-weight: 300;
-background-color: black;
-border-radius: 15px;
-  padding: 5%;
-  text-align: center;
+  height: 80px;
+  width: 200px;
+  background-color: black;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -44,7 +47,7 @@ a {
 @media (min-width: 1024px) {
   .greetings h1,
   .greetings .enjoy_button {
-    text-align: center;
+    text-align: left;
   }
 }
 </style>
