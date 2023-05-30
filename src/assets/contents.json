@@ -1,8 +1,32 @@
-[
+{
+  "social_links": [
     {
       "id": 1,
-      "title": "Hello World",
-      "description": "This is a sample work",
+      "name": "facebook",
+      "url": "https://www.facebook.com"
+    },
+    {
+      "id": 2,
+      "name": "twitter",
+      "url": "https://www.twitter.com"
+    },
+    {
+      "id": 3,
+      "name": "instagram",
+      "url": "https://www.instagram.com"
+    },
+    {
+      "id": 4,
+      "name": "linkedin",
+      "url": "https://www.linkedin.com"
+    }
+  ],
+  
+  "works": [
+    {
+      "id": 1,
+      "title": "Work1",
+      "description": "This is Work 1",
       "image_thumbnail": "https://images.unsplash.com/photo-1555397430-57791c75748a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "image_detail": "https://images.unsplash.com/photo-1555397430-57791c75748a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "client": "Client 1",
@@ -10,8 +34,8 @@
     },
     {
       "id": 2,
-      "title": "Hello World",
-      "description": "This is a sample work",
+      "title": "Work2",
+      "description": "This is Work 2",
       "image_thumbnail": "https://images.unsplash.com/photo-1608501078713-8e445a709b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "image_detail": "https://images.unsplash.com/photo-1608501078713-8e445a709b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "client": "Client 1",
@@ -19,11 +43,12 @@
     },
     {
       "id": 3,
-      "title": "Hello World",
-      "description": "This is a sample work",
+      "title": "Work3",
+      "description": "This is Work 3",
       "image_thumbnail": "https://images.unsplash.com/photo-1602773440942-a9459a43bf45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       "image_detail": "https://images.unsplash.com/photo-1602773440942-a9459a43bf45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
       "client": "Client 1",
       "url": "https://www.google.com"
     }
   ]
+}

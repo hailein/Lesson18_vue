@@ -1,32 +1,55 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import EnjoyButton from './components/EnjoyButton.vue'
-import worksData from './assets/works.json'
+/* import HelloWorld from './components/HelloWorld.vue'
+import EnjoyButton from './components/EnjoyButton.vue' */
+
+import Header from './components/Header.vue'
+import SocialLink from './components/SocialLink.vue'
+import PortfolioItem from './components/PortfolioItem.vue'
+
+import worksData from './assets/contents.json'
 
 export default {
   data() {
     return {
-      works: worksData,
+      contents: contentsData,
     };
+  },
+
+  components: {
+    PortfolioItem,
+    Header,
+    SocialLink,
   },
 };
 </script>
 
 <template>
   <main>
+    <Header />
 
-    <div class="wrapper">
-      <HelloWorld
-       title="Relax and enjoy" 
-       imageUrl="https://images.unsplash.com/photo-1588434487755-e211e0aae297?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bG9maXx8fHx8fDE2ODM3MTAyMDY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080.com/it/s/foto/lo-fi"
-       /> 
+    <div id="works" class="row">
+      <div class="col-12 col-md-6" v-for="work in contents.works" :key="work.id">
+         <PortfolioItem 
+          :title="work.title"
+          :abstract="work.description"
+          :imageUrl="work.image_thumbnail"
+        />
+      </div>
     </div>
 
-    <div>
-      <EnjoyButton msg="Clicca qui per un po' di Lo-fi" />
+    <div id="social-links" class="row">
+      <ul>
+        <li v-for="link in contents.social_links" :key="link.id">
+          <SocialLink 
+            :id="link.id"
+            :name="link.name"
+            :url="link.url"
+          />
+        </li>
+      </ul>
     </div>
 
-    <div id="works">
+<!--     <div id="works">
       <div v-for="work in works" :key="work.id">
         <h1> {{ work.title }}</h1>
         <p>
@@ -36,39 +59,20 @@ export default {
         <img :src= "work.image_thumbnail" width="200" height="200">
         </div>
       </div>
-    </div>
-
-    <!-- <div>
-      <HelloWorld
-      :title="work.title"
-      :abstract="work.description"
-      :imageUrl="work.image_thumbnail"
-      />
     </div> -->
-    
+
   </main>
 </template>
 
 <style scoped>
+
+header {
+  line-height: 1.5;
+}
+
 main {
   background-color: rgb(255, 220, 250);
   width: 100vw;
   height: 100vh;
-  margin: 0;
-}
-
-@media (min-width: 1024px) {
-  main {
-    display: flex;
-    place-items: left;
-    flex-direction: column;
-  }
-
-  main .wrapper {
-    display: flex;
-    place-items: flex-start;
-    justify-content: left;
-    flex-direction: column;
-  }
 }
 </style>
