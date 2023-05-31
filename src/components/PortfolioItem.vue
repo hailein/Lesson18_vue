@@ -29,7 +29,7 @@ defineProps({
   }
 
   .image {
-    width: 20vw;
+    width: 30vw;
     height: 20vw;
   }
 </style>
