@@ -6,7 +6,7 @@ import Header from './components/Header.vue'
 import SocialLink from './components/SocialLink.vue'
 import PortfolioItem from './components/PortfolioItem.vue'
 
-import worksData from './assets/contents.json'
+import contentsData from './assets/contents.json'
 
 export default {
   data() {
